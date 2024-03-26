@@ -1,5 +1,6 @@
 package org.learning;
 
+import javax.swing.*;
 import java.util.Scanner;
 
 public class HelloJava {
@@ -23,10 +24,16 @@ public class HelloJava {
         System.out.println("Enter an integer: ");
         //wait for the user to enter value
 
-        String value = input.nextLine();
+        int value = input.nextInt();
 
         //print user input
         System.out.println("You entered: " + value);
+
+        /*JFrame frame = new JFrame("You entered" + value);
+        JLabel label = new JLabel("You entered" + value, JLabel.CENTER);
+        frame.add(label);
+        frame.setSize(300, 300);
+        frame.setVisible(true);*/
 
     }
 }
