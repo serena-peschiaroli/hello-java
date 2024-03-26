@@ -29,11 +29,27 @@ public class HelloJava {
         //print user input
         System.out.println("You entered: " + value);
 
-        /*JFrame frame = new JFrame("You entered" + value);
-        JLabel label = new JLabel("You entered" + value, JLabel.CENTER);
+        //another test with swing's JOptionPane
+        // accept strings
+        String word = JOptionPane.showInputDialog("Enter a word:");
+
+        //jframe is a classe used to create windows, the windows can have a title(you entered...)
+        JFrame frame = new JFrame("You entered" + word);
+
+        //jlabel is used to display a short string or an image icon
+        JLabel label = new JLabel("You entered  " + word, JLabel.CENTER);
+
+        //add the label to frame
         frame.add(label);
+
+        //set the size of the windows
         frame.setSize(300, 300);
-        frame.setVisible(true);*/
+
+        //this specifies what should appnen when user close windows-->exit in this case
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        //this makes the window visible.
+        frame.setVisible(true);
 
     }
 }
